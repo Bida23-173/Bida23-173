@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros Studios</title>
+    <link rel="icon" href="pngwing.com.png" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="Css stylesheet.css">
+    
+    <script src="warnerjss.js"></script>
+    
+    
+</head>
+<body>
+    
+    <header>
+        <div class="logo">Warner Bros</div>
+
+
+        <nav>
+            
+            <ul>
+                <li><a href="Warner bros draft.html">Home</a></li>
+                <li><a href="Shows.html">TV Shows</a></li>
+                <li><a href="Movies.html">Movies</a></li>
+                <li><a href="MyList.html">My List</a></li>
+                <li><a href="Games.html">Games</a></li>
+                <li><a href="Collections.html">Feedback</a></li>
+                
+            </ul>
+        </nav>
+
+        <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+            <div id="menuLinks" class="menu-links">
+                <ul>
+                    <li><a href="Warner bros draft.html">Home</a></li>
+                    <li><a href="Shows.html">TV Shows</a></li>
+                    <li><a href="Movies.html">Movies</a></li>
+                    <li><a href="MyList.html">My List</a></li>
+                    <li><a href="Games.html">Games</a></li>
+                    <li><a href="Collections.html">Feedback</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="search-bar">
+            <div class="search-icon" onclick="toggleSearch()">
+                <i class="fa fa-search" style="color: white;"></i>
+            </div>
+            <input type="text" id="searchInput" placeholder="Search" style="display: none;">
+        </div>
+        
+        
+    </header>
+
+    <main>
+        
+
+       
+        <h2>Favourite Action Movies</h2>
+
+        <section class="scifi-movies">
+
+            <div class="content">
+                <div class="image-container"  onclick="openModal('video_url_1')">
+                    <img src="C:\Users\twilson062\Downloads\Web\Web\dune-part-1-but-with-a-black-cast-fan-casting-poster-143309-large.jpg" alt="Featured 1">
+                    
+                </div>
+                <div class="image-container"  onclick="openModal('video_url_1')">
+                    <img src="C:\Users\twilson062\Downloads\Web\Web\kong.jpeg" >
+                  
+                </div>
+                <div class="image-container"  onclick="openModal('video_url_1')">
+                    <img src="C:\Users\twilson062\Downloads\Web\Web\MV5BNjE5MzYwMzYxMF5BMl5BanBnXkFtZTcwOTk4MTk0OQ@@._V1_FMjpg_UX1000_.jpg" alt="Movie 1">
+                  
+                </div>
+
+                <div class="image-container"  onclick="openModal('video_url_1')">
+                    <img src="C:\Users\twilson062\Downloads\Web\Web\MV5BNjE5MzYwMzYxMF5BMl5BanBnXkFtZTcwOTk4MTk0OQ@@._V1_FMjpg_UX1000_.jpg" alt="Movie 1">
+                   
+                </div>
+
+                <div class="image-container"  onclick="openModal('video_url_1')">
+                    <img src="C:\Users\twilson062\Downloads\Web\Web\MV5BNjE5MzYwMzYxMF5BMl5BanBnXkFtZTcwOTk4MTk0OQ@@._V1_FMjpg_UX1000_.jpg" alt="Movie 1">
+                   
+                </div>
+                
+            
+            </div>
+
+           
+
+        </section>
+
+        <h2>Favourite Scifi Shows</h2>
+
+        <section class="action-movies">
+
+            <div class="content">
+                <div class="image-container"  onclick="openModal('video_url_1')">
+                    <img src="C:\Users\twilson062\Downloads\Web\Web\dune-part-1-but-with-a-black-cast-fan-casting-poster-143309-large.jpg" alt="Featured 1">
+                    
+                </div>
+                <div class="image-container"  onclick="openModal('video_url_1')">
+                    <img src="C:\Users\twilson062\Downloads\Web\Web\kong.jpeg" alt="Featured 2">
+                  
+                </div>
+                <div class="image-container"  onclick="openModal('video_url_1')">
+                    <img src="C:\Users\twilson062\Downloads\Web\Web\MV5BNjE5MzYwMzYxMF5BMl5BanBnXkFtZTcwOTk4MTk0OQ@@._V1_FMjpg_UX1000_.jpg" alt="Movie 1">
+                  
+                </div>
+
+                <div class="image-container"  onclick="openModal('video_url_1')">
+                    <img src="C:\Users\twilson062\Downloads\Web\Web\MV5BNjE5MzYwMzYxMF5BMl5BanBnXkFtZTcwOTk4MTk0OQ@@._V1_FMjpg_UX1000_.jpg" alt="Movie 1">
+                   
+                </div>
+
+                <div class="image-container"  onclick="openModal('video_url_1')">
+                    <img src="C:\Users\twilson062\Downloads\Web\Web\MV5BNjE5MzYwMzYxMF5BMl5BanBnXkFtZTcwOTk4MTk0OQ@@._V1_FMjpg_UX1000_.jpg" >
+                   
+                </div>
+
+        
+            
+            </div>
+
+             <!-- The Modal -->
+             <div id="videoModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <video id="modalVideo" controls autoplay>
+                        <source src="" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            
+         </section>
+
+
+        </section>
+
+        <h2>Favourite Action Shows</h2>
+
+        <section class="action-movies">
+
+            <div class="content">
+                <div class="image-container"  onclick="openModal('video_url_1')">
+                    <img src="C:\Users\twilson062\Downloads\Web\Web\dune-part-1-but-with-a-black-cast-fan-casting-poster-143309-large.jpg" alt="Featured 1">
+                    
+                </div>
+                <div class="image-container"  onclick="openModal('video_url_1')">
+                    <img src="C:\Users\twilson062\Downloads\Web\Web\kong.jpeg" alt="Featured 2">
+                  
+                </div>
+                <div class="image-container"  onclick="openModal('video_url_1')">
+                    <img src="C:\Users\twilson062\Downloads\Web\Web\MV5BNjE5MzYwMzYxMF5BMl5BanBnXkFtZTcwOTk4MTk0OQ@@._V1_FMjpg_UX1000_.jpg" alt="Movie 1">
+                  
+                </div>
+
+                <div class="image-container"  onclick="openModal('video_url_1')">
+                    <img src="C:\Users\twilson062\Downloads\Web\Web\MV5BNjE5MzYwMzYxMF5BMl5BanBnXkFtZTcwOTk4MTk0OQ@@._V1_FMjpg_UX1000_.jpg" alt="Movie 1">
+                   
+                </div>
+
+                <div class="image-container"  onclick="openModal('video_url_1')">
+                    <img src="C:\Users\twilson062\Downloads\Web\Web\MV5BNjE5MzYwMzYxMF5BMl5BanBnXkFtZTcwOTk4MTk0OQ@@._V1_FMjpg_UX1000_.jpg" >
+                   
+                </div>
+
+        
+            
+            </div>
+
+             <!-- The Modal -->
+             <div id="videoModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <video id="modalVideo" controls autoplay>
+                        <source src="" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            
+         </section>
+
+
+        </section>
+
+       
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Help Center</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy</a>
+            <a href="#">Cookie Preferences</a>
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
